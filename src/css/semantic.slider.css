@@ -1,0 +1,114 @@
+/**
+ * Semantic Slider v1.0.0
+ * Copyright 2017-2018 semantic project <semantic.project@gmail.com>
+ * Licensed The MIT License (MIT)
+ */
+.semantic-content-slider {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    margin: 0;
+    padding: 0;
+}
+.semantic-inner-slider {
+    position: relative;
+    height: 300px;
+    cursor: pointer;
+} 
+.semantic-content-slider .semantic-slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+}
+.semantic-content-slider .semantic-slide:first-child {
+    display: block;
+}
+.semantic-inner-slider .semantic-slide img {
+    width: 100%;
+    min-height: 300px;
+}
+.semantic-inner-slider .slide-prev {
+    position: absolute;
+    top: 86px;
+    left: 0;
+    z-index: 10;
+}
+.semantic-inner-slider .slide-prev span {
+    background-image: url("../images/slides._V2_.png");
+    width: 72px;
+    height: 128px;
+    float: left;
+    background-position: 7px 10px;
+    background-repeat: no-repeat;
+    background-color: rgba(99,114,130,0.3);
+    cursor: pointer;
+}
+.semantic-inner-slider .slide-next {
+    position: absolute;
+    top: 86px;
+    right: 0;
+    z-index: 10;
+}
+.semantic-inner-slider .slide-next span {
+    background-image: url("../images/slides._V2_.png");
+    width: 72px;
+    height: 128px;
+    float: left;
+    background-position: -70px 10px;
+    background-repeat: no-repeat;
+    background-color: rgba(99,114,130,0.3);
+    cursor: pointer;
+}
+.semantic-inner-slider .slide-times {
+    height:4px;
+    position: absolute;
+    bottom:15px;
+    right:0;
+    z-index: 3;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+.semantic-inner-slider .slide-timer {
+    height:4px;
+    width:40px;
+    background-color: #000;
+    float:left;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+.semantic-inner-slider .slide-progress {
+    height:4px;
+    width:0%;
+    background-color: #fff;
+    float:left;
+    border-radius: 4px;
+}
+.semantic-content-slider .slide-content {
+    top:0;
+    left:0;
+    position: absolute;
+    width:100%;
+    height:100%;
+}
+.semantic-content-slider .slide-content-inner {
+    max-width: 600px;
+    margin: 1% auto;
+}
+.slide-content .slide-title {
+    color: #000;
+    font-size: 1.5em;
+    padding-top: 5%;
+    font-style: normal;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 800;
+    line-height: 1.3em;
+    margin-bottom: 5%;
+}
+.slide-content .slide-description {
+    font-weight: 500;
+    font-size: 16px;
+}
